@@ -5,4 +5,6 @@ CREATE TABLE users (
     phone_number VARCHAR(20) NOT NULL UNIQUE,
     mfa_enabled BOOLEAN DEFAULT FALSE,
     last_login TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+    address VARCHAR(255),
+    profile_picture VARCHAR(255)
 );
