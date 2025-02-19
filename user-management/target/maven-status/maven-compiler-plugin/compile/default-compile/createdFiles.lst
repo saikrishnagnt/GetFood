@@ -1,0 +1,6 @@
+com\getfood\user\repository\UserRepository.class
+com\getfood\user\controller\UserController.class
+com\getfood\user\model\User.class
+com\getfood\user\service\UserService.class
+com\getfood\user\service\OtpService.class
+com\getfood\user\controller\AuthController.class
