@@ -1,7 +1,6 @@
 package com.getfood.user.service;
 
 import org.springframework.stereotype.Service;
-
 import java.util.Map;
 import java.util.Random;
 import java.util.concurrent.ConcurrentHashMap;
