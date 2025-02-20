@@ -21,11 +21,16 @@ public class JwtService {
     }
 
     public String extractPhone(String token) {
-        return Jwts.parserBuilder().setSigningKey(key).build()
-                .parseClaimsJws(token)
-                .getBody()
-                .getSubject();
+        try {
+            return Jwts.parserBuilder().setSigningKey(key).build()
+                    .parseClaimsJws(token)
+                    .getBody()
+                    .getSubject();
+        } catch (JwtException | IllegalArgumentException e) {
+            return null;  // Return null instead of throwing an exception
+        }
     }
+
 
     public boolean validateToken(String token) {
         try {
